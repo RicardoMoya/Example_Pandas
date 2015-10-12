@@ -14,6 +14,8 @@ print '\n==================================================================\n'
 dictPlayers = {1: 'Casillas', 15: 'Ramos', 3: 'Pique', 5: 'Puyol', 11: 'Capdevila', 14: 'Xabi Alonso',
                16: 'Busquets', 8: 'Xavi Hernandez', 18: 'Pedrito', 6: 'Iniesta', 7: 'Villa'}
 players2series = pd.Series(dictPlayers)
+# Insert new player
+players2series[10] = 'Cesc'
 print "Spanish Football Players through dictionary: \n%s" %players2series
 print '\n==================================================================\n'
 
@@ -29,5 +31,5 @@ spanishPlayersDF = pd.DataFrame(
     index=[1, 15, 3, 5, 11, 14, 16, 8, 18, 6, 7]
 )
 # Insert new player
-spanishPlayersDF.loc[11] = ['Cesc','Forward','Arsenal']
+spanishPlayersDF.loc[10] = ['Cesc','Forward','Arsenal']
 print "Spanish Football Players DataFrame: \n%s" %spanishPlayersDF
