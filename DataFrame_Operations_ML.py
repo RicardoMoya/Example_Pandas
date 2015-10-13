@@ -30,6 +30,6 @@ mergeRatings = pd.merge(pd.merge(users,ratings),movies)
 
 # Show Best rated movies
 avgRatings = pd.DataFrame(mergeRatings.values.copy(), mergeRatings.index.copy(), mergeRatings.columns.copy()).convert_objects(convert_numeric=True) # Clone DataFrame
-avgRatings = avgRatings.pivot_table(index=['title', 'age'])
+avgRatings = avgRatings.pivot_table(index=['title'], values=['rating'], aggfunc=[np.sum, np.mean])
 print avgRatings[:5]
 

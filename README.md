@@ -1,7 +1,7 @@
 # Examples with Panda's Library
 In this project is going to make an example with pandas' library in Python.
-See the diference between Series and DataFrame:
 
+See the diference between Series and DataFrame:
 
 For this example i used the "MovieLens" data set that contains information of users, films and ratings.
 
