@@ -17,19 +17,9 @@ ratings = pd.read_table('dataSet/ratings.txt', engine='python', sep='::', header
 # Merge data
 mergeRatings = pd.merge(pd.merge(users,ratings),movies)
 
-# # Show Films with more votes. (groupby + sorted)
-# numberRatings = pd.DataFrame(mergeRatings.values.copy(), mergeRatings.index.copy(), mergeRatings.columns.copy()).convert_objects(convert_numeric=True) # Clone DataFrame
-# numberRatings = numberRatings.groupby('title').size().sort_values(ascending=False)
-# print 'Films with more votes.: \n%s' %numberRatings[:10]
-
-
-# # Show Best rated movies
-# avgRatings = pd.DataFrame(mergeRatings.values.copy(), mergeRatings.index.copy(), mergeRatings.columns.copy()).convert_objects(convert_numeric=True) # Clone DataFrame
-# avgRatings = avgRatings.groupby('title').agg(['mean', 'count'])
-# print avgRatings['rating'][:10]
 
 # Show Best rated movies
 avgRatings = pd.DataFrame(mergeRatings.values.copy(), mergeRatings.index.copy(), mergeRatings.columns.copy()).convert_objects(convert_numeric=True) # Clone DataFrame
-avgRatings = avgRatings.pivot_table(index=['title'], values=['rating'], aggfunc=[np.sum, np.mean])
+avgRatings = avgRatings.pivot_table(index=['movie_id', 'title'], values=['rating'], aggfunc=[np.sum, np.size, np.mean])
 print avgRatings[:5]
 
