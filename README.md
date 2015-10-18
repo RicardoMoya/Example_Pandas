@@ -1,4 +1,4 @@
-# Examples with Panda's Library
+# Examples with Pandas' Library
 In this project is going to make an example with pandas' library in Python.
 
 Will see the differences between Series and DataFrame:
