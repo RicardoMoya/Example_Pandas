@@ -1,6 +1,10 @@
 # Ejemplo con la librería de Pandas / Examples with Pandas' Library
 ### Spanish:
-Para más información visitar la siguiente URL: http://jarroba.com/
+Para más información visitar las siguientes URLs:
+
+1. **Parte I**: Introducción a Pandas. (http://jarroba.com/pandas-python-ejemplos-parte-i-introduccion/)
+2. **Parte II**: DataFrame: Lectura y Escritura, Mergeo de DataFrame's y GroupBy. (http://jarroba.com/pandas-python-ejemplos-parte-ii-io-merge-groupby/)
+3. **Parte III**: Operaciones de "Pivot_table" con DataFrame's.(http://jarroba.com/pandas-python-ejemplos-parte-iii-pivot_table/)
 
 
 ### Sort description in English:
